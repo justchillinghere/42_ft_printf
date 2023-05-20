@@ -6,7 +6,7 @@
 /*   By: luchitel <luchitel@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:54:58 by luchitel          #+#    #+#             */
-/*   Updated: 2023/05/20 15:51:35 by luchitel         ###   ########.fr       */
+/*   Updated: 2023/05/20 16:20:40 by luchitel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_printf(const char *str, ...)
 {
-	char	*format;
-	int		result;
+	char			*format;
+	int				result;
 	va_list_wrapper	wrap;
 
 	result = 0;
