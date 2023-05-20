@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 #include "printf_hex.h"
 
-char	*get_hex_from_arg(t_params *pf, va_list_wrapper *ap)
+char	*get_hex_from_arg(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	*num_str;
 
@@ -30,7 +30,7 @@ char	*get_hex_from_arg(t_params *pf, va_list_wrapper *ap)
 	return (num_str);
 }
 
-int	print_hex(t_params *pf, va_list_wrapper *ap)
+int	print_hex(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	*hex_str;
 	int		hex_len;

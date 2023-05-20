@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	print_init(char *str, va_list_wrapper ap, int length)
+int	print_init(char *str, t_va_list_wrapper ap, int length)
 {
 	char	*pointer_to_percent;
 

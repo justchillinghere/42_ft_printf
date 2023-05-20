@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-char	*get_str_with_precision(t_params *pf, va_list_wrapper *ap)
+char	*get_str_with_precision(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	*str;
 
@@ -52,7 +52,7 @@ void	print_str_width(t_params *pf, int str_len)
 	}
 }
 
-int	print_str(t_params *pf, va_list_wrapper *ap)
+int	print_str(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	*str;
 	int		str_len;

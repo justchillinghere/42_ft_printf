@@ -22,7 +22,7 @@ static void	print_width(t_params *pf, char padding)
 	}
 }
 
-static void	put_char(t_params *pf, va_list_wrapper *ap)
+static void	put_char(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	char_to_print;
 
@@ -33,7 +33,7 @@ static void	put_char(t_params *pf, va_list_wrapper *ap)
 	pf->total_length += write(1, &char_to_print, 1);
 }
 
-int	print_char(t_params *pf, va_list_wrapper *ap)
+int	print_char(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	padding;
 

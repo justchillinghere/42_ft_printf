@@ -37,20 +37,20 @@ typedef struct s_params {
 
 typedef struct va_list_wrapper {
 	va_list	v;
-} va_list_wrapper;
+}	t_va_list_wrapper;
 
 int		ft_printf(const char *str, ...);
-int		print_init(char *str, va_list_wrapper ap, int length);
-int		ft_init_parse(char **str, va_list_wrapper *ap);
-int		parse_format(t_params *pf, va_list_wrapper *ap);
-int		parse_flags(t_params *pf, va_list_wrapper *ap);
-int		parse_specifier(t_params *pf, va_list_wrapper *ap);
-int		parse_precision(t_params *pf, va_list_wrapper *ap);
-int		parse_width(t_params *pf, va_list_wrapper *ap);
-int		print_str(t_params *pf, va_list_wrapper *ap);
-int		print_hex(t_params *pf, va_list_wrapper *ap);
-int		print_char(t_params *pf, va_list_wrapper *ap);
-int		print_int(t_params *pf, va_list_wrapper *ap);
+int		print_init(char *str, t_va_list_wrapper ap, int length);
+int		ft_init_parse(char **str, t_va_list_wrapper *ap);
+int		parse_format(t_params *pf, t_va_list_wrapper *ap);
+int		parse_flags(t_params *pf, t_va_list_wrapper *ap);
+int		parse_specifier(t_params *pf, t_va_list_wrapper *ap);
+int		parse_precision(t_params *pf, t_va_list_wrapper *ap);
+int		parse_width(t_params *pf, t_va_list_wrapper *ap);
+int		print_str(t_params *pf, t_va_list_wrapper *ap);
+int		print_hex(t_params *pf, t_va_list_wrapper *ap);
+int		print_char(t_params *pf, t_va_list_wrapper *ap);
+int		print_int(t_params *pf, t_va_list_wrapper *ap);
 void	initialize_params(t_params *params, char *format_str);
 void	check_zero_padding_flag(t_params *pf);
 char	*convert_arg_to_custom_base(unsigned long long int num, \

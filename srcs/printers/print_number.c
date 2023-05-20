@@ -32,7 +32,7 @@ static void	print_number(t_params *pf, char *number_str)
 		print_width_num(pf, num_len);
 }
 
-int	print_int(t_params *pf, va_list_wrapper *ap)
+int	print_int(t_params *pf, t_va_list_wrapper *ap)
 {
 	long int	number;
 	char		*number_str;

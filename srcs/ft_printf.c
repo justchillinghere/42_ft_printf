@@ -14,9 +14,9 @@
 
 int	ft_printf(const char *str, ...)
 {
-	char			*format;
-	int				result;
-	va_list_wrapper	wrap;
+	char				*format;
+	int					result;
+	t_va_list_wrapper	wrap;
 
 	result = 0;
 	format = (char *) str;

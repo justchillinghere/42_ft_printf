@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	parse_specifier(t_params *pf, va_list_wrapper *ap)
+int	parse_specifier(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	specifier;
 

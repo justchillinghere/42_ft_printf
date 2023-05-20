@@ -27,7 +27,7 @@ unsigned int	find_format_length(char *str)
 // It changes str inplace to the position of the specifier
 // and returns number of characters that has been printed.
 
-int	ft_init_parse(char **str, va_list_wrapper *ap)
+int	ft_init_parse(char **str, t_va_list_wrapper *ap)
 {
 	t_params		*pf;
 	char			*params_str;

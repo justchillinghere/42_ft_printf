@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	parse_flags(t_params *pf, va_list_wrapper *ap)
+int	parse_flags(t_params *pf, t_va_list_wrapper *ap)
 {
 	char	flag;
 
